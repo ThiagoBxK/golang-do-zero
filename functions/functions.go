@@ -6,7 +6,7 @@ import (
 )
 
 // Somar 2 números
-func sum(a int, b int) int {
+func sum(a, b int) int {
 	return a + b
 }
 

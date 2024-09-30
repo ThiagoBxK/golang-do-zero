@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	// Simulando download
@@ -16,5 +14,12 @@ func main() {
 	for sum < 100 {
 		fmt.Printf("Baixando... %d%%\n", sum+1)
 		sum++
+	}
+
+	// Usando range
+	var numbers = []int{1, 2, 3, 4, 5}
+
+	for index, value := range numbers {
+		fmt.Println(index, value)
 	}
 }
