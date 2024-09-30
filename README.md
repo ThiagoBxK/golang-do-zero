@@ -9,6 +9,7 @@ Este repositório contém todos os meus estudos e códigos de experimentos enqua
 )
 
 * Dia 1 - Variaveis, funções, tipos de dados, condicionais, concatenação, arrays e loops (29/09)
+* Dia 2 - Defer, ponteiros, closure, struct, maps e range loops (30/09)
 
 
 ## Recursos
