@@ -9,7 +9,7 @@ Este repositório contém todos os meus estudos e códigos de experimentos enqua
 - Dia 1 - Variaveis, funções, tipos de dados, condicionais, concatenação, arrays e loops (29/09)
 - Dia 2 - Defer, ponteiros, closure, struct, maps e range loops (30/09)
 - Dia 3 - Channels, runtines, waitGroups, OS é pacotes (01/10)
-- Dia 4 - Regexp, algoritmos do codewars, bingo, count characters e printer errors (02/10)
+- Dia 4 - Primeiro servidor http com variavel de ambiente usando godotenv (02/10)
 
 ## Recursos
 
