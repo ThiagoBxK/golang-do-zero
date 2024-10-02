@@ -15,3 +15,4 @@ Este repositório contém todos os meus estudos e códigos de experimentos enqua
 
 - [Documentação Oficial](https://go.dev/doc/)
 - [Aprenda Go / Golang (Curso Tutorial de Programação)](https://www.youtube.com/playlist?list=PLUbb2i4BuuzCX8CLeArvx663_0a_hSguW)
+- [CodeWars](https://www.codewars.com/users/ThiagoBxK)
