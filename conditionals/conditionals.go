@@ -3,22 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	var name string = "admin"
-	var token string = "API_TOKEN"
-	var expectedToken string = "admin"
+	token := "ADMIN_TOKEN"
 
-	// If & Else
-	if token == expectedToken {
+	// Usando if & else
+	if token == "ADMIN_TOKEN" {
 		fmt.Println("Autenticado!")
 	} else {
 		fmt.Println("Login Invalido!")
 	}
 
-	// Switch
+	// Usando Switch
 	switch {
-	case name == "Admin":
-		fmt.Println("Olá, Chefe!")
+	case token == "ADMIN_TOKEN":
+		fmt.Println("Autenticado!")
 	default:
-		fmt.Println("Olá", name)
+		fmt.Println("Login Invalido!")
 	}
 }

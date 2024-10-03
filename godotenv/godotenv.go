@@ -8,7 +8,8 @@ import (
 	"github.com/joho/godotenv"
 )
 
-func getEnv(key string) string {
+// Função que obtém uma variável de ambiente por chave
+func getEnvironmentVar(key string) string {
 	err := godotenv.Load()
 
 	if err != nil {
@@ -20,7 +21,5 @@ func getEnv(key string) string {
 }
 
 func main() {
-	token := getEnv("ACCESS_TOKEN")
-
-	fmt.Println(token)
+	fmt.Println(getEnvironmentVar("API_KEY"))
 }

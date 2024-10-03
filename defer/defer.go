@@ -2,14 +2,18 @@ package main
 
 import "fmt"
 
-func message() string {
-	fmt.Println("Chegou aqui!")
-	return "Olá"
+func finalyMessage() {
+	fmt.Println("2 - A execução do programa foi concluída.")
 }
 
 func main() {
-	defer fmt.Println("Carregou por ultimo!")
-	defer fmt.Println(message()) // Vai rodar a função e adiar o retorno
+	// Função que será executada no final do programa
+	defer finalyMessage()
 
-	fmt.Println("Carregou primeiro!")
+	// Função anonima que também será executada ao final do programa
+	defer func() {
+		fmt.Println("1 - A execução do programa foi concluída.")
+	}()
+
+	fmt.Println("Rodando programa...")
 }

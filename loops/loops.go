@@ -4,22 +4,22 @@ import "fmt"
 
 func main() {
 	// Simulando download
-	for i := 0; i < 100; i++ {
-		fmt.Printf("Baixando... %d%%\n", i+1)
+	for i := 1; i < 101; i++ {
+		fmt.Printf("Baixando... %d%%\n", i)
 	}
 
-	// While loop
-	var sum int = 2
+	// Equivalente ao while
+	index := 0
 
-	for sum < 100 {
-		fmt.Printf("Baixando... %d%%\n", sum+1)
-		sum++
+	for index < 10 {
+		fmt.Println(index)
+		index++
 	}
 
 	// Usando range
-	var numbers = []int{1, 2, 3, 4, 5}
+	users := []string{"Ana", "Maria", "Pedro", "Juliana"}
 
-	for index, value := range numbers {
-		fmt.Println(index, value)
+	for index, name := range users {
+		fmt.Println(index, name)
 	}
 }

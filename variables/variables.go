@@ -3,13 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// Variavel com tipo definido
-	var name string = "James"
-	const nameB string = "Ethan Carter"
-	// Constante
+	// Variavel padrão
+	var name = "Sofia"
 
-	// Variável com tipo inferido, onde a própria linguagem define
-	surname := "Anderson" // Forma curta de escrever uma variável
+	// Variável curta com tipo inferido
+	surname := "Anderson"
 
 	// Declaração de múltiplas variáveis
 	var (
@@ -18,10 +16,9 @@ func main() {
 	)
 
 	work, country, salary := "Programmer", "Georgia", 12500.00
-
-	// String com concatenação %tipo do dado
 	message := fmt.Sprintf("They are %d years old, %.2f meters tall, work as an %s, live in the %s, and earn $%.2f per year.", age, height, work, country, salary)
 
 	fmt.Println(`Hello`, name, surname, "welcome to Go!")
 	fmt.Println(message)
+
 }

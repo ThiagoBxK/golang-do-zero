@@ -2,15 +2,20 @@ package main
 
 import "fmt"
 
+// Se o parâmetro fosse passado como uma variável normal, o valor original não seria alterado,
+// Pois a função receberia uma cópia da variável, e qualquer modificação ocorreria apenas na cópia.
+func changeName(pointer *string) {
+	// Mudando valor via ponteiro
+	*pointer = "James"
+}
+
 func main() {
-	var year int = 2024
+	name := "Alice"
 
-	// Endereço de memoria da variavel year
-	var pointer *int = &year
+	// Endereço de memoria da variavel
+	pointer := &name
 
-	fmt.Println(pointer, *pointer)
-
-	// Desreferencia o ponteiro e atribui um novo valor
-	*pointer = 2025
-	fmt.Println(year)
+	fmt.Printf("Ponteiro: %p, Valor: %s\n", pointer, name)
+	changeName(pointer)
+	fmt.Printf("Ponteiro: %p, Valor: %s\n", pointer, name)
 }

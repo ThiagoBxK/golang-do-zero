@@ -2,21 +2,22 @@ package main
 
 import "fmt"
 
-func counter() func(increment int) int {
-	var counter int = 0
+func counter() (func(int) int, func(int) int) {
+	counter := 0
 
+	// Retorna duas funções increment & decrement
 	return func(increment int) int {
-		counter += increment
-		return counter
-	}
+			counter += increment
+			return counter
+		}, func(decrement int) int {
+			counter += decrement
+			return counter
+		}
 }
 
 func main() {
-	var count = counter()
+	increment, decrement := counter()
 
-	count(1)
-	count(1)
-	count(1)
-
-	fmt.Println(count(1))
+	fmt.Printf("Valor atual: %d\n", increment(10))
+	fmt.Printf("Valor atual: %d\n", decrement(5))
 }

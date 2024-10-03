@@ -5,34 +5,17 @@ import (
 	"math"
 )
 
-// Somar 2 números
-func sum(a, b int) int {
-	return a + b
-}
+func solveQuadraticEquation(a, b, c float64) []float64 {
+	// Calculo de delta
+	var delta = math.Pow(b, 2) - 4*a*c
 
-// Calcula a equação do segundo grau
-func calcDelta(a, b, c float64) float64 {
-	return math.Pow(b, 2) - 4*a*c
-}
-
-type QuadraticEquation struct {
-	x1 float64
-	x2 float64
-}
-
-func calcQuadracticEquation(a, b, c float64) QuadraticEquation {
-	var delta = calcDelta(a, b, c)
-
-	x1 := func() float64 {
-		return (-b + math.Sqrt(delta)) / (2 * a)
+	// Retorna um array com os valores de X1 & X2
+	return []float64{
+		(-b + math.Sqrt(delta)) / (2 * a),
+		(-b - math.Sqrt(delta)) / (2 * a),
 	}
-	x2 := func() float64 {
-		return (-b - math.Sqrt(delta)) / (2 * a)
-	}
-
-	return QuadraticEquation{x1: x1(), x2: x2()}
 }
 
 func main() {
-	fmt.Println(calcQuadracticEquation(2, -4, 1))
+	fmt.Println(solveQuadraticEquation(2, -4, 1))
 }
