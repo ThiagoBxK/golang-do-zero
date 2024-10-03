@@ -10,7 +10,7 @@ Este repositório contém todos os meus estudos e códigos de experimentos enqua
 - Dia 2 - Defer, ponteiros, closure, struct, maps e range loops (30/09)
 - Dia 3 - Channels, runtines, waitGroups, OS é pacotes (01/10)
 - Dia 4 - Primeiro servidor http com variavel de ambiente usando godotenv, algoritmos do codewars e regexp (02/10)
-- Dia 5 - Revisando aprendizado (03/10)
+- Dia 5 - Revisando aprendizado & criando um crud (03/10)
 
 ## Recursos
 
