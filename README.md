@@ -13,6 +13,10 @@ Este repositório contém todos os meus estudos e códigos de experimentos enqua
 - Dia 5 - Revisando aprendizado & criando um crud (03/10)
 - Dia 6 - Estrutura de pastas (04/10)
 
+# --
+
+- Dia 7 - Desáfios do ChatGPT (14/10)
+
 ## Recursos
 
 - [Documentação Oficial](https://go.dev/doc/)
